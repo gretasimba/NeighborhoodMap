@@ -11,7 +11,7 @@ The application loads, shows a New York City Map with few Museums markers on it.
 The user can perform a search by museum name, only selected "museum" marker would be visible on map when search is performed.
 When user clicks on marker on the map information window pops up showing the museum name, street address, city, zip, url and phone.
 
-# APIs Used
+# APIs Used 
 
 Google Maps Javascript API
 Google Maps Geocoding API
