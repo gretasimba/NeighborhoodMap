@@ -1,0 +1,76 @@
+html,
+body {
+	font-family: Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 100%;
+	position: relative;
+}
+
+.search {
+	display: flex;
+	background-color: #4285F4;
+}
+
+.search-box {
+	background-image: url('search.png'); /* Add a search icon to input */
+	background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+	height:10%;
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin: 10px;
+}
+
+.map {
+	bottom:0px;
+	height: 100%;
+	left: 362px;
+	position: absolute;
+	right: 0px;
+}
+.list {
+	background: #fff;
+	border: 1px solid #999;
+	border-radius: 3px;
+	height: 100%;
+	line-height: 35px;
+	padding: 10px 10px 30px 10px;
+	text-align: left;
+	width: 340px;
+}
+.museum {
+	margin-top: 10px;
+	padding: 0;
+}
+.results {
+	margin: 0;
+	padding: 0;
+}
+
+.place {
+    padding: 10px;
+    list-style: none;
+}
+
+.place:hover{
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+.app {
+	flex-direction: column;
+}
+
+.search{
+	position: fixed;
+	z-index: 1;
+}
+
+
+ 
