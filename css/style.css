@@ -49,7 +49,7 @@ body {
 	padding: 0;
 }
 .results {
-	margin: 0;
+	margin: 20px;
 	padding: 0;
 }
 
@@ -67,10 +67,6 @@ body {
 	flex-direction: column;
 }
 
-.search{
-	position: fixed;
-	z-index: 1;
-}
 
 
  
