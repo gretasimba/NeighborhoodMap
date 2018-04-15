@@ -47,7 +47,7 @@ var initialMuseums = [
         name: "Intrepid Sea, Air & Space Museum",
         lat: 40.7645266,
         lng: -73.99960759999999,
-        url: "http://intrepidmuseum.org"
+        url: "https://www.intrepidmuseum.org"
     }
 ];
 
@@ -145,7 +145,7 @@ var Museum = function(data) {
 function viewModel() {
 	var self = this;
 
-	this.searchTerm = ko.observable("");
+	this.searchFilter = ko.observable("");
 
 	this.locationList = ko.observableArray([]);
 	
@@ -329,7 +329,7 @@ function viewModel() {
     //show after searching
 	this.filteredList = ko.computed( function() {
 		
-		var filter = self.searchTerm().toLowerCase();
+		var filter = self.searchFilter().toLowerCase();
 		if (!filter) {
 			self.locationList().forEach(function(locationItem){
 				locationItem.visible(true);
@@ -355,6 +355,5 @@ function startApp() {
 }
 
 function errorHandling() {
-	alert("Google Maps has failed to load. Please check your Internet connection and try again.");
+	alert("Error loading Google Maps. Please try again.");
 }
-
